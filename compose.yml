@@ -12,7 +12,7 @@ services:
       MYSQL_USER: root
       MYSQL_PASSWORD: secret
       MYSQL_DB: todos
- 
+
 mysql:
     image: mysql:8.0
     volumes: 
@@ -20,8 +20,7 @@ mysql:
 environment:
       MYSQL_ROOT_PASSWORD: secret
       MYSQL_DATABASE: todos
-depends_on:
-      - mysql  
+
 volumes:
     todo-mysql-data:
     
